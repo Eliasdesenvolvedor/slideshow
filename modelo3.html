@@ -1,0 +1,39 @@
+<html>
+<style>
+.container {
+width: 500px; 
+height: 200px;
+border: 5px solid red; 
+}
+.caixadobotao {
+ display: flex;
+position:relative;
+  left: 46%;
+  top: 100px;
+}
+.botao {
+  cursor: pointer;
+color:white; 
+font-size:50px; 
+}
+.botao:hover {
+color:red; 
+}
+
+</style>
+
+
+<div class="container">
+<div id="imagemum"><img id="imagem1" src="imagem1.png" alt="imagem" width="500" height="200" style=" position: absolute; z-index: -1; "></div>
+<div id="imagemum"><img id="imagem2" src="imagem2.png" alt="imagem" width="500" height="200" style=" position: absolute; z-index: -2; "></div>
+<div id="imagemum"><img id="imagem3" src="imagem3.png" alt="imagem" width="500" height="200" style=" position: absolute; z-index: -3; "></div>
+
+<div class="caixadobotao">
+<h1 class="botao" onclick="document.getElementById('imagem1').src='imagem1.png'">.</button>
+<h1 class="botao" onclick="document.getElementById('imagem1').src='imagem2.png'">.</button>
+<h1 class="botao" onclick="document.getElementById('imagem1').src='imagem3.png'">.</button>
+</div>
+
+</div>
+
+</html>
